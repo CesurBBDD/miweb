@@ -1,7 +1,7 @@
 name: ci
 
 on:
-  push:
+  pull-request:
     branches:
       - 'main'
 
@@ -26,5 +26,5 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: bernat13/miweb:latest , bernat13/miweb:${{github.event.commits[0].message}}
+          tags: bernat13/miweb:latest , bernat13/miweb:${{github.event.pull_request.title}}
 
