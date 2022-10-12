@@ -26,5 +26,5 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: bernat13/miweb:latest | bernat13/miweb:${{ github.sha }}
+          tags: bernat13/miweb:latest | bernat13/miweb:1.0.0
 
