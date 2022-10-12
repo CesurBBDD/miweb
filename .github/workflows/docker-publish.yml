@@ -1,9 +1,8 @@
 name: ci
 
 on:
-  pull-request:
-    branches:
-      - 'main'
+  pull_request:
+    types: [closed]
 
 jobs:
   docker:
